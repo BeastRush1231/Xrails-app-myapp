@@ -1,6 +1,7 @@
 import React from 'react';
 import Jumbotron from './Jumbotron.js'
 import Table from './Table/Table.js'
+import Item from './Table/Item.js'
 
 class Home extends React.Component {
   constructor(){
@@ -21,6 +22,7 @@ class Home extends React.Component {
       <div>
         <Jumbotron />
         <Table />
+        <Item />
       </div>
     )
   };

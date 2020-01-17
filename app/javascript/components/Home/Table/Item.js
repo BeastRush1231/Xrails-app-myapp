@@ -1,14 +1,23 @@
 import React from 'react'
+import Thumbnails from '../Table/Thumbnail.js'
 
 const Item = (props) => {
+
+  // props > Table.js > Home.js
   return (
-    <div className="flex">
-      <div className="md:w-5/6">
-        <div className="text-center">
-          <div className="card px-5">
-            <div className="flex">
-              <div className="w-1/3">1</div>
-              <div className="w-2/3">2</div>
+    <div className="container mx-auto p-5 lg:px-20 lg:py-8">
+      <div className="w-full mx-auto">
+        <div className="text-center flex border-2 border-black p-3 flex-wrap lg:flex-no-wrap">
+          <div className="w-full lg:w-1/2">
+            <Thumbnails src={props.src}/>
+          </div>
+          <div className="w-full lg:w-1/2 lg:mt-10">
+            <div className="pt-4 leading-loose">
+              <h4 className="py-3 text-xl lg:text-2xl font-normal leading-tight">{props.title}</h4>
+              <p className="text-xl font-normal">{props.description}</p>
+              <div className="my-2 py-2">
+                <a href={props.src} target="_blank" className="bg-red-700 border-2 border-black text-white font-bold cursor-pointer p-2">Watch this video</a>
+                </div>
             </div>
           </div>
         </div>

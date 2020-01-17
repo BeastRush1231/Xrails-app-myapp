@@ -1,4 +1,5 @@
 import React from 'react'
+import Item from './Item'
 
 class Table extends React.Component{
   constructor(props){
@@ -6,15 +7,22 @@ class Table extends React.Component{
   }
 
   render(){
+    // props = Home.js > this.state.five_x_ruby_modules
+
+    const items = this.props.five_x_ruby_modules.map( data => {
+      return <Item key={data.id} title={data.title} description={data.description} src={data.src}/>
+    });
+
     return (
-      <div className="py-5">
-        <div className="container mx-auto">
-          <div className="text-center">
-            <h2 className="py-4 text-2xl lg:text-4xl font-bold">
-              5xruby DemoProject - Videos
-            </h2>
-          </div>
+      <div className="container mx-auto">
+        <div className="text-center pt-8">
+          <h2 className="pb-3 text-2xl lg:text-4xl font-bold">
+            5xruby DemoProject - Videos
+          </h2>
         </div>
+        {/* Item.js */}
+        {items}
+        {/* Item.js */}
       </div>
     )
   }

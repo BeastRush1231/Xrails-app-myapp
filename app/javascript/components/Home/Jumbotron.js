@@ -15,7 +15,7 @@ const Jumbotron = () => {
         </div>
         <div className="w-full lg:w-1/2">
           <div className="py-10 lg:py-4">
-            <iframe width="100%" height="330" src="https://www.youtube.com/embed/dR_-10fBYOM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="330" src="https://www.youtube.com/embed/CHdVqxBpEcY" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </div>

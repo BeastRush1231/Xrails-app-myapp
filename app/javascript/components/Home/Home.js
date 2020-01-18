@@ -1,6 +1,6 @@
 import React from 'react';
-import Jumbotron from './Jumbotron.js'
-import Table from './Table/Table.js'
+import Jumbotron from './Jumbotron.js';
+import Table from './Table/Table.js';
 
 class Home extends React.Component {
   constructor(){
@@ -15,22 +15,22 @@ class Home extends React.Component {
           active: false 
         },
         { id: 2, 
-          title: '2nd 5xruby AstroCamp DemoProject Video.', 
+          title: 'AstroCamp x Speed Interview Video.', 
           description: 'lorem isupm',
-          src: 'https://www.youtube.com/embed/dR_-10fBYOM', 
-          active: false 
+          src: 'https://www.youtube.com/embed/PVBfbAeY7Yk', 
+          active: true 
         },
         { id: 3, 
-          title: '3rd 5xruby AstroCamp DemoProject Video', 
+          title: '2nd 5xruby AstroCamp DemoProject Video', 
           description: 'lorem isupm',
           src: 'https://www.youtube.com/embed/dR_-10fBYOM', 
           active: false 
         },
         { id: 4, 
-          title: '4th 5xruby AstroCamp DemoProject Video', 
+          title: 'AstroCamp x Speed Interview Video.', 
           description: 'lorem isupm',
-          src: 'https://www.youtube.com/embed/dR_-10fBYOM', 
-          active: false 
+          src: 'https://www.youtube.com/embed/PVBfbAeY7Yk', 
+          active: true 
         }
       ]
     }

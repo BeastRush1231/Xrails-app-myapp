@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Video = (props) => {
+const ItemVideo = (props) => {
   return (
     <div>
       <iframe width="100%" height="330" src={props.src} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -8,4 +8,4 @@ const Video = (props) => {
   )
 }
 
-export default Video;
+export default ItemVideo;

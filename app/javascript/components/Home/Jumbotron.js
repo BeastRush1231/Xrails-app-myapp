@@ -1,5 +1,13 @@
 import React from 'react'
 
+const BoxShadow = {
+  boxShadow: `
+    0px 0px 0px 3px #473228, 
+    -6px 6px #feb2b2,
+    -6px 6px 0px 3px #473228
+  `
+};
+
 const Jumbotron = () => {
   return (
     <section className="lg:py-40 bg-red-700 text-white">
@@ -9,7 +17,7 @@ const Jumbotron = () => {
             <h1 className="py-3 text-3xl lg:text-6xl font-bold leading-tight">5xruby For Demo ProjectList</h1>
             <p className="text-xl font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, sint.</p>
             <div className="mt-8">
-              <a className="bg-white border-2 border-black text-black font-bold cursor-pointer py-4 px-10">Get Started</a>
+              <a className="bg-white border-black text-black font-bold cursor-pointer py-4 px-10" style={BoxShadow}>Get Started</a>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
-import React from 'react'
-import Item from './Item'
+import React from 'react';
+import Item from './Item';
+import ActiveItem from './ActiveItem';
 
 class Table extends React.Component{
   constructor(props){
@@ -10,7 +11,11 @@ class Table extends React.Component{
     // props = Home.js > this.state.five_x_ruby_modules
 
     const items = this.props.five_x_ruby_modules.map( data => {
-      return <Item key={data.id} title={data.title} description={data.description} src={data.src}/>
+      return (
+        data.active 
+        ? <ActiveItem key={data.id} title={data.title} description={data.description}src={data.src}/> 
+        : <Item key={data.id} title={data.title} description={data.description} src={data.src}/>
+      )
     });
 
     return (

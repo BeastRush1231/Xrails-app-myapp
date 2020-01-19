@@ -16,7 +16,7 @@ class Home extends React.Component {
         },
         { id: 2, 
           title: 'AstroCamp x Speed Interview Video.', 
-          description: 'lorem isupm',
+          description: `【快速面試】ASTRO Camp 現場直擊 💪`,
           src: 'https://www.youtube.com/embed/PVBfbAeY7Yk', 
           active: true 
         },
